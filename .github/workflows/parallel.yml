@@ -1,0 +1,21 @@
+name: Parallel workflow 
+on: workflow_dispatch
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print hello 
+        run: echo "Hello world!"
+
+  print_full_info: 
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Print full_tech_info 
+        run: sudo lshw
+
+  print_short_info:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Print short_tech_info 
+        run: sudo lshw -short
