@@ -1,4 +1,4 @@
-name: Parallel workflow 
+name: Sequential workflow 
 on: workflow_dispatch
 
 jobs: 
